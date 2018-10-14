@@ -8,3 +8,5 @@ edition = "2018"
 rand="0.5"
 separator="0.3"
 clap = "2.32"
+num_cpus = "1.0"
+

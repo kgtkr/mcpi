@@ -1,7 +1,9 @@
 #[macro_use]
 extern crate clap;
+extern crate num_cpus;
 extern crate rand;
 extern crate separator;
+
 use separator::Separatable;
 
 use clap::{App, Arg};
@@ -9,6 +11,7 @@ use std::sync::mpsc;
 use std::thread;
 
 fn main() {
+    let cpus_count_str = num_cpus::get().to_string();
     let app = App::new("MCPI")
         .version(env!("CARGO_PKG_VERSION"))
         .author("tkr <kgtkr.jp@gmail.com>")
@@ -19,7 +22,7 @@ fn main() {
                 .long("threads")
                 .short("t")
                 .takes_value(true)
-                .default_value("10"),
+                .default_value(&cpus_count_str),
         )
         .arg(
             Arg::with_name("log")
