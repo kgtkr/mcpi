@@ -5,4 +5,5 @@ authors = ["kgtkr <kgtkr.jp@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-rand=""
+rand="*"
+separator=""
