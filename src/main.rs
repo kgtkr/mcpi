@@ -27,7 +27,7 @@ fn main() {
                 .long("log")
                 .short("l")
                 .takes_value(true)
-                .default_value("10000000"),
+                .default_value("1000000000"),
         );
 
     let matches = app.get_matches();
