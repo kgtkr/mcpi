@@ -3,7 +3,7 @@
 
 ## Install
 ```
-$ cargo install --git https://github.com/kgtkr/mcpi
+$ cargo install -f --git https://github.com/kgtkr/mcpi
 ```
 
 ## Usage
